@@ -3,70 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ทักษ์ดนัย พรมปัญญา</title>
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    /* 🌿 สไตล์มินิมอล */
-    body {
-      font-family: 'Prompt', sans-serif;
-      background-color: #fafafa;
-      color: #222;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.2em;
-    }
-
-    p {
-      font-size: 1.1em;
-      color: #555;
-      max-width: 500px;
-      text-align: center;
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
       line-height: 1.6;
     }
 
-    .social {
-      margin-top: 20px;
+    a {
+      text-decoration: none;
+      color: inherit;
     }
 
-    .social a {
-      color: #555;
-      text-decoration: none;
-      margin: 0 10px;
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    header h1 {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      font-weight: 500;
       transition: color 0.3s;
     }
 
-    .social a:hover {
-      color: #000;
+    nav a:hover {
+      color: #007BFF;
+    }
+    .hero {
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .project {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .project h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
 
     footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 0.8em;
+      text-align: center;
+      margin-top: 4rem;
+      padding: 2rem 0;
+      font-size: 0.9rem;
       color: #999;
     }
+
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #007BFF;
+      color: #fff;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
   </style>
-  <!-- ฟอนต์สวยแบบมินิมอล -->
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>ทักษ์ดนัย พรมปัญญา</h1>
-  <p>สวัสดีครับ 👋 ผมคือทักษ์ดนัย นักพัฒนาเว็บที่ชอบออกแบบสิ่งที่เรียบง่าย  
-     และเชื่อว่าความมินิมอลคือความงามของการสื่อสารที่ชัดเจน</p>
 
-  <div class="social">
-    <a href="https://github.com/yourusername" target="_blank">GitHub</a> ·
-    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> ·
-    <a href="mailto:your@email.com">Email</a>
+  <div class="container">
+
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="about">
+      <h2>Hi, I'm Takdanai Prompanya</h2>
+      <p>My space </p>
+    </section>
+
+    
+    <section id="about" style="padding:5rem 1rem; background-color:#fff; border-radius:12px; margin-top:3rem; text-align:center; max-width:800px; margin-left:auto; margin-right:auto;">
+    <h2 style="font-size:2rem; margin-bottom:1rem;">About Me</h2>
+    <img src="https://via.placeholder.com/150" alt="Twiligh" style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:1.5rem;">
+    <p style="font-size:1rem; color:#555; line-height:1.6;">
+        Hi! I'm <strong>Nai</strong> age = 19 Date 11/01/06
+    </p>
+     <p style="font-size:1rem; color:#555; line-height:1.6; margin-top:1rem;">
+        
+    </p>
+    <a href="#contact" class="btn" style="margin-top:1.5rem; display:inline-block;">Get in Touch</a>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="project">
+        <img src="https://via.placeholder.com/400x250" alt="Project 1">
+        <h3>Project One</h3>
+        <p>Minimalist website design with modern UI/UX principles.</p>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x250" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>Responsive web application using latest frontend frameworks.</p>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x250" alt="Project 3">
+        <h3>Project Three</h3>
+        <p>Portfolio redesign focusing on simplicity and readability.</p>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x250" alt="Project 4">
+        <h3>Project Four</h3>
+        <p>Interactive UI components with smooth animations.</p>
+      </div>
+    </section>
+
+    <section id="contact" style="text-align:center; margin-top:4rem;">
+      <h2>Contact Me</h2>
+      <p>Want to work together? Reach out!</p>
+      <a href="mailto:twiligh@example.com" class="btn">Email Me</a>
+    </section>
+
+    <footer>
+      &copy; 2025 Twiligh. All rights reserved.
+    </footer>
   </div>
 
-  <footer>© 2025 Thakdanai Prompanya</footer>
 </body>
 </html>
